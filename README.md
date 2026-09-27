@@ -15,7 +15,7 @@ DocSage answers natural-language questions using *only* the documents you give i
 
 ---
 
-## What makes it interesting (engineering)
+## What makes it interesting
 
 - **Hybrid retrieval** (`app/core/retrieval.py`): BM25 lexical scoring *and* vector similarity, fused with a tunable weight. Neither alone is enough — BM25 nails exact terms, vectors capture paraphrase — and the UI lets you slide between them live.
 - **Abstention over hallucination**: results below a relevance floor are dropped and the system explicitly says "I couldn't find an answer." This is the single most important property of a trustworthy RAG system.
