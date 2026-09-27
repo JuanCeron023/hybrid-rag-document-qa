@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen text-slate-100 antialiased font-sans;
+    background: radial-gradient(1200px 600px at 50% -10%, #4c1d95 0%, #2e1065 40%, #0b0518 100%);
+  }
+}
+
+@keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; } }
+.msg-enter { animation: fade 0.25s ease; }

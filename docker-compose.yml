@@ -1,0 +1,9 @@
+services:
+  docsage:
+    build: .
+    ports:
+      - "8000:8000"     # UI + API: http://localhost:8000
+    environment:
+      # Optional: set to enable OpenAI embeddings + generation.
+      # - OPENAI_API_KEY=sk-...
+      - PYTHONUNBUFFERED=1
